@@ -1,0 +1,37 @@
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+  }
+  
+  input[type="text"] {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+  }
+  
+  button {
+	padding: 8px 12px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	cursor: pointer;
+  }
+  
+  ul {
+	list-style-type: none;
+	padding: 0;
+  }
+  
+  li {
+	margin-bottom: 5px;
+  }
+  button.remove-button {
+	background-color: #ff4136;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	margin-left: 10px;
+	cursor: pointer;
+  }
+	
