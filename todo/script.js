@@ -8,7 +8,7 @@ function addTask() {
 	  
 	  let removeButton = document.createElement("button");
 	  removeButton.innerText = "Remove";
-	  removeButton.addEventListener("click", function() {
+	  removeButton.addEventListener("click",  function() {
 		taskList.removeChild(task);
 	  });
 	  removeButton.classList.add("remove-button");
