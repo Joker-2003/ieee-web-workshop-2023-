@@ -70,30 +70,14 @@ body {
 	list-style-type: none;
 	padding: 0;
   }
-  
-  /* li {
-	margin-bottom: 10px;
-	display: flex;
-	align-items: center;
-	background: rgba(255, 255, 255, 0.1);
-	border-radius: 8px;
-	padding: 8px;
-  }
-   */
   li:last-child {
 	margin-bottom: 0;
   }
   
-  /* button.remove-button {
-	background: rgba(255, 65, 54, 0.8);
-	color: #ffffff;
-	border: none;
-	padding: 8px 16px;
-	margin-left: 10px;
-	cursor: pointer;
-	border-radius: 8px;
-	transition: background-color 0.3s ease;
-  } */
+ /* flex box  */
+  
+/*   
+
   
   button.remove-button:hover {
 	background: rgba(255, 65, 54, 1);
@@ -127,12 +111,46 @@ body {
 	li {
 	  flex-wrap: wrap;
 	}
+  } */
+
+  /* no flex box */
+
+  li {
+	position: relative;
+	margin-bottom: 10px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 8px;
+	padding: 8px;
+	overflow: hidden; /* Ensures the button does not overflow */
   }
   
-  /* @media screen and (max-width: 500px) {
+  li button.remove-button {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	background: rgba(255, 65, 54, 0.8);
+	color: #ffffff;
+	border: none;
+	padding: 8px 16px;
+	cursor: pointer;
+	border-radius: 8px;
+	transition: background-color 0.3s ease;
+  }
+  
+  @media screen and (max-width: 500px) {
 	.container {
 	  max-width: 100%;
 	  border-radius: 0;
 	}
+	
+	li button.remove-button {
+	  position: relative;
+	  top: auto;
+	  right: auto;
+	  transform: none;
+	  margin-left: 10px;
+	}
   }
-   */
+  
+  
